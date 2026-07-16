@@ -1,4 +1,3 @@
-import Image from "next/image"
 import { ControlPanelViewer } from "@/components/control-panel-viewer"
 
 const stats = [
@@ -17,13 +16,13 @@ export function OverviewSection() {
         <div className="grid items-center gap-8 lg:grid-cols-2 lg:gap-16">
           {/* Left column: Chamber image — shows below text on mobile */}
           <div className="order-2 flex items-center justify-center rounded-lg bg-background lg:order-1">
-            <Image
-              src="/images/vital-sphere-360-chamber.png"
-              alt="MitoBooster XL red light therapy bed — professional-grade full-body red light and near-infrared therapy system"
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img
+              src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Experience%20Advanced%20Whole-Body%20Red%20Light%20Therapy-HbNtwuXFJ9caMwFmP9OeAcZq6E2Ihz.png"
+              alt="MitoBooster XL red light therapy bed open — showing glowing red LED panels inside"
               width={500}
               height={600}
               loading="lazy"
-              sizes="(min-width: 1024px) 40vw, (min-width: 640px) 24rem, 20rem"
               className="h-auto w-full max-w-xs object-contain sm:max-w-sm lg:max-w-md"
             />
           </div>
